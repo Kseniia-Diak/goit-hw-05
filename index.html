@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,12 +29,18 @@
           >
           <ul class="site-nav">
             <li class="site-nav-item">
-              <a href="./index.html" class="link current">Studio</a>
+              <a href="./index.html" class="link current site-nav-link"
+                >Студія</a
+              >
             </li>
             <li class="site-nav-item">
-              <a href="./portfolio.html" class="link">Portfolio</a>
+              <a href="./portfolio.html" class="link site-nav-link"
+                >Портфоліо</a
+              >
             </li>
-            <li class="site-nav-item"><a href="" class="link">Contacts</a></li>
+            <li class="site-nav-item">
+              <a href="" class="link site-nav-link">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -63,15 +69,17 @@
       <!-- hero screen -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective solutions for your business</h1>
-          <button class="button primary" type="button">Order a service</button>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open class="button primary" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
       <!-- benefits -->
       <section class="section benefits">
         <div class="container">
-          <h2 class="title visually-hidden">Features</h2>
+          <h2 class="title visually-hidden">Особливості</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
               <div class="benefits-pic">
@@ -79,10 +87,10 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Attention to detail</h3>
+              <h3 class="benefits-title">Увага до деталей</h3>
               <p class="content">
-                Conceptual ideas and even the beginning of everyday work to form
-                a position.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="benefits-item">
@@ -91,10 +99,10 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Punctuality</h3>
+              <h3 class="benefits-title">Пунктуальність</h3>
               <p class="content">
-                The task of the organization, especially the framework and the
-                place of training, draws in.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="benefits-item">
@@ -103,10 +111,9 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Planning</h3>
+              <h3 class="benefits-title">Планування</h3>
               <p class="content">
-                Consultation with a wide range of stakeholders largely
-                determines it.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="benefits-item">
@@ -115,10 +122,10 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Modern technologies</h3>
+              <h3 class="benefits-title">Сучасні технології</h3>
               <p class="content">
-                The significance of these issues is so obvious that the
-                implementation of planned tasks is necessary.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -129,34 +136,43 @@
 
       <section class="section works">
         <div class="container">
-          <h2 class="title">What we do</h2>
+          <h2 class="title">Чим ми займаємося</h2>
           <ul class="works-list">
             <li>
-              <img
-                class="works-pic"
-                src="./images/img-1.jpg"
-                alt="Desktop apps"
-                width="370"
-                height="294"
-              />
+              <div class="works-thumb">
+                <img
+                  class="works-pic"
+                  src="./images/img-1.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  height="294"
+                />
+                <p class="works-label">Десктопні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                class="works-pic"
-                src="./images/img-2.jpg"
-                alt="Mobile apps"
-                width="370"
-                height="294"
-              />
+              <div class="works-thumb">
+                <img
+                  class="works-pic"
+                  src="./images/img-2.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="294"
+                />
+                <p class="works-label">Мобільні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                class="works-pic"
-                src="./images/img-3.jpg"
-                alt="Design solutions"
-                width="370"
-                height="294"
-              />
+              <div class="works-thumb">
+                <img
+                  class="works-pic"
+                  src="./images/img-3.jpg"
+                  alt="Дизайнерські рішення"
+                  width="370"
+                  height="294"
+                />
+                <p class="works-label">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -166,18 +182,18 @@
 
       <section class="section our-team">
         <div class="container">
-          <h2 class="title">Our Team</h2>
+          <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-pic"
                 src="./images/product-designer.jpg"
-                alt="Product Designer"
+                alt="Дизайнер продукту"
                 width="270"
                 height="260"
               />
               <div class="team-item-content">
-                <h3 class="subtitle">Ihor Demyanenko</h3>
+                <h3 class="subtitle">Ігор Дем'яненко</h3>
                 <p class="team-position" lang="en">Product Designer</p>
 
                 <ul class="socials-list">
@@ -230,12 +246,12 @@
               <img
                 class="team-pic"
                 src="./images/frontend-developer.jpg"
-                alt="Frontend Developer"
+                alt="Фронтенд розробник"
                 width="270"
                 height="260"
               />
               <div class="team-item-content">
-                <h3 class="subtitle">Olha Repina</h3>
+                <h3 class="subtitle">Ольга Рєпіна</h3>
                 <p class="team-position" lang="en">Frontend Developer</p>
                 <ul class="socials-list">
                   <li class="socials-item">
@@ -287,12 +303,12 @@
               <img
                 class="team-pic"
                 src="./images/marketing.jpg"
-                alt="Marketing Specialist"
+                alt="Маркетолог"
                 width="270"
                 height="260"
               />
               <div class="team-item-content">
-                <h3 class="subtitle">Mykola Tarasov</h3>
+                <h3 class="subtitle">Микола Тарасов</h3>
                 <p class="team-position" lang="en">Marketing</p>
                 <ul class="socials-list">
                   <li class="socials-item">
@@ -344,12 +360,12 @@
               <img
                 class="team-pic"
                 src="./images/ui-designer.jpg"
-                alt="UI Designer"
+                alt="UI Дизайнер"
                 width="270"
                 height="260"
               />
               <div class="team-item-content">
-                <h3 class="subtitle">Mykhailo Yermakov</h3>
+                <h3 class="subtitle">Михайло Єрмаков</h3>
                 <p class="team-position" lang="en">UI Designer</p>
                 <ul class="socials-list">
                   <li class="socials-item">
@@ -404,7 +420,7 @@
       <!-- clients -->
       <section class="clients section">
         <div class="container">
-          <h2 class="title">Our Clients</h2>
+          <h2 class="title">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-item">
               <a
@@ -493,7 +509,7 @@
                   target="_blank"
                   rel="nofollow noreferrer noopener"
                   class="link address-map"
-                  >Kyiv, Lesi Ukrainky Blvd, 26</a
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="address-item">
@@ -511,7 +527,7 @@
         </div>
 
         <div class="follow-container">
-          <p class="follow-title">Join Us</p>
+          <p class="follow-title">приєднуйтесь</p>
           <ul class="footer-follow-list">
             <li class="follow-item">
               <a
@@ -565,5 +581,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="btn-close">
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
