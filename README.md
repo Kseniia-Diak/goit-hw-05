@@ -1,6 +1,6 @@
 ### Project Overview
 
-This project is part of the **GoIT Fullstack Development Course**.
+This project is a front-end layout based on a provided design mockup. It adheres to modern web development standards and best practices. This project is part of the **GoIT Fullstack Development Course**, showcasing the implementation of HTML, CSS, and responsive design principles as taught in the curriculum.
 
 ## 📁 Project Structure
 
